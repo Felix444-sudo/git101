@@ -1,0 +1,163 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#f4f4f4;
+}
+
+.navbar{
+background:#2c3e50;
+color:white;
+padding:15px 30px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.nav-links{
+display:flex;
+list-style:none;
+gap:20px;
+}
+
+.nav-links a{
+color:white;
+text-decoration:none;
+}
+
+.nav-links a:hover{
+color:#f39c12;
+}
+
+.hero{
+text-align:center;
+padding:100px 20px;
+}
+
+.hero h1{
+font-size:48px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:20px;
+margin-bottom:20px;
+}
+
+.hero button{
+padding:12px 25px;
+background:#3498db;
+border:none;
+color:white;
+cursor:pointer;
+border-radius:5px;
+}
+
+.search-section{
+padding:30px;
+text-align:center;
+}
+
+.search-section input{
+width:60%;
+padding:12px;
+}
+
+.book-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+padding:20px;
+}
+
+.book-card{
+background:white;
+padding:15px;
+border-radius:10px;
+text-align:center;
+box-shadow:0 0 10px rgba(0,0,0,.1);
+}
+
+.book-card img{
+width:100%;
+height:250px;
+object-fit:cover;
+border-radius:10px;
+}
+
+.book-card button{
+margin-top:10px;
+padding:10px 20px;
+background:#3498db;
+border:none;
+color:white;
+cursor:pointer;
+border-radius:5px;
+}
+
+.contact-section{
+padding:50px;
+text-align:center;
+}
+
+.contact-section form{
+max-width:500px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+.contact-section input,
+.contact-section textarea{
+padding:12px;
+}
+
+.contact-section button{
+padding:12px;
+background:#3498db;
+border:none;
+color:white;
+cursor:pointer;
+}
+
+.modal{
+display:none;
+position:fixed;
+left:0;
+top:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.6);
+}
+
+.modal-content{
+background:white;
+width:80%;
+max-width:500px;
+margin:10% auto;
+padding:25px;
+border-radius:10px;
+text-align:center;
+position:relative;
+}
+
+.close{
+position:absolute;
+top:10px;
+right:20px;
+font-size:30px;
+cursor:pointer;
+}
+
+footer{
+background:#2c3e50;
+color:white;
+text-align:center;
+padding:15px;
+margin-top:30px;
+}
